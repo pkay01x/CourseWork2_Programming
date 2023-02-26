@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Muli";
+  background: #eeeeee;
+  font-size: 15px;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+.container .inner {
+  display: grid;
+  grid-template-columns: 40% auto;
+}
+.container .left {
+  background: linear-gradient(180deg, rgb(67, 198, 172) 0%, rgb(25, 22, 84) 100%);
+  text-align: center;
+  padding: 5em;
+}
+.container .left h1 {
+  margin: 2.5em 0;
+  color: #eeeeee;
+}
+.container .left h1 span {
+  font-size: 60px;
+  color: rgb(67, 198, 172);
+}
+.container .left h3 {
+  padding-top: 10em;
+  font-size: 30px;
+  color: rgb(67, 198, 172);
+}
+.container .left p {
+  font-size: 20px;
+  color: rgb(25, 22, 84);
+}
+.container .right {
+  background: #282C35;
+  padding: 1em;
+  padding-top: 3em;
+}
+.container .right input {
+  width: calc(80% - 4em);
+  padding: 1em;
+  border-radius: 0.75em;
+  border-color: rgb(67, 198, 172);
+  outline: none;
+  margin: 2em;
+  font-family: inherit;
+}
+.container .right .scan p {
+  font-size: 20px;
+  color: #eeeeee;
+}
+.container .right .scan button {
+  background: rgb(67, 198, 172);
+  display: inline-block;
+  width: 20%;
+  padding: 0.75em;
+  margin: 2em;
+  border: none;
+  font-family: inherit;
+  color: white;
+  font-size: 15px;
+}
+.container .right .scan button:hover {
+  color: #282C35;
+  background-color: #eeeeee;
+}
+.container .right .scan button:active {
+  color: #eeeeee;
+  background-color: rgb(25, 22, 84);
+}
+.container .right button {
+  background: rgb(67, 198, 172);
+  display: inline-block;
+  width: calc(40% - 3em);
+  padding: 0.75em;
+  margin: 1em;
+  border: none;
+  font-family: inherit;
+  color: white;
+  font-size: 15px;
+}
+.container .right button:hover {
+  color: #282C35;
+  background-color: #eeeeee;
+}
+.container .right button:active {
+  color: #eeeeee;
+  background-color: rgb(25, 22, 84);
+}
+.container .result {
+  margin: auto;
+  height: 400px;
+  width: 80%;
+  position: relative;
+}
+.container .result p {
+  font-family: inherit;
+  color: #eeeeee;
+  text-align: left;
+  font-size: 20px;
+}
+.container .box {
+  text-align: left;
+  font-family: inherit;
+  background: #282C35;
+  border: 2px solid rgb(63, 249, 220);
+  border-radius: 0.75em;
+  margin: auto;
+  height: 400px;
+  width: 100%;
+  position: relative;
+  overflow: auto;
+}
+.container .box h4 {
+  margin: 2em;
+  font-size: 15px;
+  color: rgb(67, 198, 172);
+  line-height: 1.5em;
+}
+
+.footer {
+  font-family: inherit;
+  color: rgb(25, 22, 84);
+  font-size: 15px;
+}
+.footer span {
+  font-size: 20px;
+  color: rgb(67, 198, 172);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #282C35;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgb(67, 198, 172);
+}
+
+/* Loading Animation */
+@keyframes pulse {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0.25;
+    transform: scale(0.75);
+  }
+}
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38vh;
+}
+
+.pulse-container {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pulse-bubble {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(63, 249, 220);
+}
+
+.pulse-bubble-1 {
+  animation: pulse 0.4s ease 0s infinite alternate;
+}
+
+.pulse-bubble-2 {
+  animation: pulse 0.4s ease 0.2s infinite alternate;
+}
+
+.pulse-bubble-3 {
+  animation: pulse 0.4s ease 0.4s infinite alternate;
+}/*# sourceMappingURL=main.css.map */
